@@ -24,6 +24,8 @@
       deleniti placeat amet cumque quo.
     </p>
 
+<!-- feild types -->
+
     <!-- List -->
 <ul>
     <li>list item 1</li>
@@ -59,11 +61,81 @@
 
 <br>
 <hr>
+<br>
+
 <!--Forms-->
-<form>
-    <label>First Name</label>
-    <input type="text" name="first-name"
+<form action="process.php" method="post">
+    <!--form action="process.php" is just a placeholder for where you want the information to be sent to-->
+    <div>
+          <label>First Name</label>
+          <input type="text" name="firstName"
+          placeholder="Entre First Name"
+    </div>
+    <br>
+    <div>
+         <label>Last Name</label>
+         <input type="text" name="lastName"
+    </div>
+    <br>
+    <div>
+        <label>Email</label>
+        <input type="email" name="email"
+    </div>
+    <br>
+    <div>
+        <label>Message</label>
+        <textarea name="message"></textarea>
+        </div>
+        <br>
+        <div>
+            <label>Gender</label>
+            <select name="gender">
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select>
+        </div>
+        <br>
+        <div>
+            <label>Age</label>
+            <input name="number" name="Age"
+            value="21" 
+        </div>
+        <br>
+        <div>
+            <label>Birthday</label>
+            <input type="date" name="Birthday"
+        </div>
+        <br>
+        <input type="submit" name="Submit"
+        value="Submit"
 </form>
+
+<!--Button-->
+<button>Click Me</button>
+
+<br>
+<!--Image-->
+<a href="images/spiderman.jpg">
+     <img src="images/spiderman.jpg" alt="Spiderman Image"
+     width="200" height="200">
+     </a>
+
+<br>
+
+<!-- Quatations -->
+
+<blockquote cite="http://traversymedia.com">
+    Lorem ipsum this tag makes it stand out e.g bold dolor sit amet,
+           this is just a test consectetur adipisicing elit. Sit labore qui accusantium 
+          illum cum voluptate odio consequatur ratione quae molestiae iusto est architecto at natus,
+        deleniti placeat amet cumque quo.
+</blockquote>
+
+<p> The <abbr titile="World Wide Web">WWW</abbr> is awsome</p>
+
+<p><cite>HTML crash course from frontend</cite></p>
+
 
  </body>
 </html>
